@@ -42,7 +42,10 @@ public class Racional {
     public void setB(char b) {
         this.b = 1;
     }
-    
-    
+
+    public void imprimirConsola() {
+
+        System.out.println("Numero racional" + " " + a + " " + b);
+    }
 
 }
