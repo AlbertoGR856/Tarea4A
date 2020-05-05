@@ -11,6 +11,9 @@ package com.mycompany.racionalalberto;
  */
 public class Racional {
     
-    private char numero;
+    private char a;
+    private char b;
+    
+    
     
 }
