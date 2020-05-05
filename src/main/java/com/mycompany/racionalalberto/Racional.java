@@ -27,4 +27,22 @@ public class Racional {
 
     }
 
+    public char getA() {
+        return a;
+    }
+
+    public void setA(char a) {
+        this.a = 1;
+    }
+
+    public char getB() {
+        return b;
+    }
+
+    public void setB(char b) {
+        this.b = 1;
+    }
+    
+    
+
 }
