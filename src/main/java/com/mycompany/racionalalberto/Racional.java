@@ -48,4 +48,10 @@ public class Racional {
         System.out.println("Numero racional" + " " + a + " " + b);
     }
 
+    @Override
+    public String toString() {
+        return "Racional{" + "a=" + a + ", b=" + b + '}';
+    }
+
+    
 }
