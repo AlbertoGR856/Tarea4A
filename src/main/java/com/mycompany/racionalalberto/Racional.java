@@ -10,10 +10,21 @@ package com.mycompany.racionalalberto;
  * @author GR6
  */
 public class Racional {
-    
+
     private char a;
     private char b;
-    
-    
-    
+
+    public Racional(char a, char b) {
+        this.a = 1;
+        this.b = 1;
+    }
+
+    public Racional() {
+        if (b == 0) {
+            System.out.println("El denominador no es valido");
+            this.b = 1;
+        }
+
+    }
+
 }
