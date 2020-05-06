@@ -25,6 +25,9 @@ public class AppRacional {
         System.out.println("RacionalZ = " + racionalZ);
         System.out.println("RacionalK =" + racionalK);
         System.out.println("RacionalAleatorio = " + racionalAleatorio);
+        
+        //Compara los racionales z y k, mostrando el resultado en pantalla.
+         System.out.println(Racional.igualdad(racionalZ, racionalK));
 
     }
 
