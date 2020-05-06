@@ -5,6 +5,8 @@
  */
 package com.mycompany.racionalalberto;
 
+import java.util.Random;
+
 /**
  *
  * @author GR6
@@ -120,6 +122,16 @@ public class Racional {
                 == racional1.denominador * racional2.numerador;
 
         return resultado;
+    }
+    
+     //Método que crea un Racional con valores aleatorios
+    public static Racional aleatorio() {
+        Random varRandom = new Random();
+
+        int numerador = varRandom.nextInt();
+        int denominador = varRandom.nextInt();
+
+        return new Racional();
     }
 
     //Sobreescritura método toString
