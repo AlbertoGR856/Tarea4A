@@ -59,13 +59,11 @@ public class Racional {
 
         }
     }
-    
-    //Sobreescritura método toString
-    @Override
-    public String toString() {
-        return numerador + "/" + denominador;
-    }
 
+    //Método que imprime por consola
+    public void imprimirConsola() {
+        System.out.println("Número racional" + numerador + "/" + denominador);
+    }
 
     //Método que suma a un objeto creado
     public void suma(Racional racional) {
@@ -84,4 +82,26 @@ public class Racional {
 
     }
 
+    //Método que resta a un objeto creado
+    public void resta(Racional racional) {
+
+        if (this.denominador == racional.denominador) {
+
+            this.numerador -= racional.numerador;
+
+        } else {
+
+            this.numerador = (this.numerador * racional.denominador)
+                    - (this.denominador * racional.numerador);
+
+            this.denominador *= racional.denominador;
+        }
+
+    }
+
+    //Sobreescritura método toString
+    @Override
+    public String toString() {
+        return numerador + "/" + denominador;
+    }
 }
