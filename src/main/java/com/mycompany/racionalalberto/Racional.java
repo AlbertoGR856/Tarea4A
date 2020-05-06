@@ -11,47 +11,77 @@ package com.mycompany.racionalalberto;
  */
 public class Racional {
 
-    private char a;
-    private char b;
+    //Atributos
+    private int numerador;
+    private int denominador;
 
-    public Racional(char a, char b) {
-        this.a = 1;
-        this.b = 1;
+    //Constructor por defecto
+    public Racional() {
+        this.numerador = 1;
+        this.denominador = 1;
     }
 
-    public Racional() {
-        if (b == 0) {
-            System.out.println("El denominador no es valido");
-            this.b = 1;
+    //Constructor parametrizado
+    public Racional(int numerador, int denominador) {
+        this.numerador = numerador;
+
+        //Controlamos que el denominador no sea 0
+        if (denominador == 0) {
+            this.denominador = 1;
+            System.out.println("El denominador no es valido, se asigna el valor 1");
+
+        } else {
+            this.denominador = denominador;
+
+        }
+    }
+
+    //Getters y Setters
+    public int getNumerador() {
+        return numerador;
+    }
+
+    public int getDenominador() {
+        return denominador;
+    }
+
+    public void setNumerador(int numerador) {
+        this.numerador = numerador;
+    }
+
+    public void setDenominador(int denominador) {
+        if (denominador == 0) {
+            this.denominador = 1;
+            System.out.println("El denominador no es valido, se asigna el valor 1");
+
+        } else {
+            this.denominador = denominador;
+
+        }
+    }
+    
+    //Sobreescritura método toString
+    @Override
+    public String toString() {
+        return numerador + "/" + denominador;
+    }
+
+
+    //Método que suma a un objeto creado
+    public void suma(Racional racional) {
+
+        if (this.denominador == racional.denominador) {
+
+            this.numerador += racional.numerador;
+
+        } else {
+
+            this.numerador = (this.numerador * racional.denominador)
+                    + (this.denominador * racional.numerador);
+
+            this.denominador *= racional.denominador;
         }
 
     }
 
-    public char getA() {
-        return a;
-    }
-
-    public void setA(char a) {
-        this.a = 1;
-    }
-
-    public char getB() {
-        return b;
-    }
-
-    public void setB(char b) {
-        this.b = 1;
-    }
-
-    public void imprimirConsola() {
-
-        System.out.println("Numero racional" + " " + a + " " + b);
-    }
-
-    @Override
-    public String toString() {
-        return "Racional{" + "a=" + a + ", b=" + b + '}';
-    }
-
-    
 }
