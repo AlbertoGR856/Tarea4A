@@ -37,6 +37,11 @@ public class AppRacional {
         //Prueba división
         System.out.println("El resultado de dividir Z y K es" + Racional.division(racionalZ, racionalK));
 
+        //Prueba multiplicación
+        racionalZ.producto(racionalK);
+
+        System.out.println("El resultado de la multiplicacion es = " + racionalZ);
+
     }
 
 }
