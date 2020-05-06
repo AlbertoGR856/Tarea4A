@@ -106,6 +106,11 @@ public class Racional {
         this.denominador *= racional.denominador;
     }
 
+     //Método estático que divide dos números dados
+    public static Racional division(Racional racional1, Racional racional2) {
+
+        return new Racional(racional1.numerador *= racional2.denominador, racional1.denominador *= racional2.numerador);
+    }
 
     //Sobreescritura método toString
     @Override
