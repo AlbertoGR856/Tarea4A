@@ -10,9 +10,14 @@ package com.mycompany.racionalalberto;
  * @author GR6
  */
 public class AppRacional {
-    
+
     public static void main(String[] args) {
-        
+
+        //Crea dos racionales  con valores z=4/5 y k=3/4.
+        Racional racionalZ = new Racional(4, 5);
+
+        Racional racionalK = new Racional(3, 4);
+
     }
-    
+
 }
