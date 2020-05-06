@@ -111,6 +111,16 @@ public class Racional {
 
         return new Racional(racional1.numerador *= racional2.denominador, racional1.denominador *= racional2.numerador);
     }
+    
+    //Método estático que compara dos números dados
+    public static boolean igualdad(Racional racional1, Racional racional2) {
+        boolean resultado;
+
+        resultado = racional1.numerador * racional2.denominador
+                == racional1.denominador * racional2.numerador;
+
+        return resultado;
+    }
 
     //Sobreescritura método toString
     @Override
