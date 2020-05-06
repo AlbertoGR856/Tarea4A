@@ -98,6 +98,14 @@ public class Racional {
         }
 
     }
+    
+     //Método que multiplica a un objeto creado
+    public void producto(Racional racional) {
+
+        this.numerador *= racional.numerador;
+        this.denominador *= racional.denominador;
+    }
+
 
     //Sobreescritura método toString
     @Override
