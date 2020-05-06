@@ -34,6 +34,9 @@ public class AppRacional {
 
         System.out.println("El resultado de la suma es = " + racionalZ);
 
+        //Prueba división
+        System.out.println("El resultado de dividir Z y K es" + Racional.division(racionalZ, racionalK));
+
     }
 
 }
